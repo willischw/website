@@ -1,1 +1,114 @@
-<p>test</p>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie vs Player Info</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff3b3b;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        section {
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 800px;
+            background-color: #2a2a2a;
+            border-radius: 10px;
+        }
+        section h2 {
+            color: #ff3b3b;
+        }
+        .images {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .images img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .images img:hover {
+            transform: scale(1.05);
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #ff3b3b;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #e02a2a;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zombie vs Player</h1>
+        <p>Das ultimative Roblox Survival-Spiel!</p>
+    </header>
+
+    <section id="game-info">
+        <h2>Spielbeschreibung</h2>
+        <p>Überlebe gegen Horden von Zombies! Arbeite mit deinen Freunden zusammen, verbessere deine Waffen und kämpfe um dein Überleben.</p>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Mehrspieler-Modus</li>
+            <li>Verschiedene Waffen und Power-Ups</li>
+            <li>Wellen von Zombies mit steigendem Schwierigkeitsgrad</li>
+            <li>Koop-Gameplay</li>
+        </ul>
+    </section>
+
+    <section id="gallery">
+        <h2>Screenshots</h2>
+        <div class="images">
+            <img src="screenshot1.png" alt="Gameplay Screenshot 1">
+            <img src="screenshot2.png" alt="Gameplay Screenshot 2">
+        </div>
+    </section>
+
+    <section id="join">
+        <h2>Jetzt spielen!</h2>
+        <button id="playButton">Spiel starten</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Zombie vs Player | Roblox Game</p>
+    </footer>
+
+    <script>
+        document.getElementById('playButton').addEventListener('click', function() {
+            alert('Viel Spaß beim Spielen von Zombie vs Player auf Roblox!');
+            // Optional: auf Roblox Game weiterleiten
+            // window.location.href = "https://www.roblox.com/games/DEINE_GAME_ID";
+        });
+    </script>
+</body>
+</html>
